@@ -668,26 +668,37 @@ p {
 .project-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 18px;
+  gap: 12px;
+  margin-top: 20px;
 }
 
-.project-links a {
+.project-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 38px;
-  padding: 9px 12px;
-  border: 1px solid rgba(70, 217, 200, 0.38);
+  min-width: 122px;
+  min-height: 42px;
+  padding: 10px 14px;
+  border: 1px solid rgba(70, 217, 200, 0.44);
   border-radius: 6px;
   color: var(--text);
-  font-size: 0.84rem;
+  font-size: 0.82rem;
   font-weight: 800;
-  background: rgba(70, 217, 200, 0.08);
+  letter-spacing: 0;
   transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
 }
 
-.project-links a:hover {
+.demo-link {
+  border-color: rgba(125, 223, 100, 0.7);
+  background: rgba(125, 223, 100, 0.14);
+}
+
+.source-link {
+  border-color: rgba(120, 169, 255, 0.62);
+  background: rgba(120, 169, 255, 0.1);
+}
+
+.project-link:hover {
   transform: translateY(-2px);
   border-color: rgba(246, 200, 95, 0.72);
   background: rgba(246, 200, 95, 0.1);
